@@ -91,7 +91,7 @@
     
     CloudShell e CLI são duas formas que a Amazon disponibiliza para ter acesso à plataforma da AWS por terminal ou linha de comando, sendo a CloudShell acessada pelo próprio navegador e a CLI sendo acessada por meio de instalação e autenticação no computador do usuário.
     
-    ![Figura 1: Exemplo de uso da CloudShell para listar usuários criados no IAM.](Curso%20para%20AWS%20Cloud%20Practitioner%20e8d773f981534a9aa7555f9522143608/Untitled.png)
+    ![Figura 1: Exemplo de uso da CloudShell para listar usuários criados no IAM.](images/fig1.png)
     
     Figura 1: Exemplo de uso da CloudShell para listar usuários criados no IAM.
     
