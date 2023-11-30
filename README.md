@@ -1,7 +1,7 @@
 # Sumário
 
 - [Conceitos](#conceitos)
-    - [O que é Cloud Computing?](#o-que-é-cloud-computing?)
+    - [O que é Cloud Computing?](#o-que-é-cloud-computing)
     - [Vantagens da Cloud Computing](#vantagens-da-cloud-computing)
     - [Tipos de Cloud](#tipos-de-cloud)
     - [Planos de suporte da AWS](#planos-de-suporte-da-aws)
