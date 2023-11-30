@@ -37,9 +37,9 @@
 
 # Conceitos
 
-- **O que é Cloud Computing?**
+#### O que é Cloud Computing?
     
-    Resumidamente, computação em nuvem é a tecnologia que permite o acesso à hardware e softwares de maneira remota, gerenciando a disponibilidade sob demanda de recursos do sistema de computador, especialmente armazenamento de dados e capacidade de computação, sem o gerenciamento ativo direto do utilizador.
+Resumidamente, computação em nuvem é a tecnologia que permite o acesso à hardware e softwares de maneira remota, gerenciando a disponibilidade sob demanda de recursos do sistema de computador, especialmente armazenamento de dados e capacidade de computação, sem o gerenciamento ativo direto do utilizador.
     
 - **Vantagens da Cloud Computing**
     - Custo reduzido
