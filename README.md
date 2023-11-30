@@ -1,3 +1,40 @@
+# Sumário
+
+- [Conceitos](#conceitos)
+    - [O que é Cloud Computing?](#)
+    - [Vantagens da Cloud Computing](#)
+    - [Tipos de Cloud](#)
+    - [Planos de suporte da AWS](#)
+- [O IAM (Identity and Access Management)](#o-iam-identity-and-access-management)
+    - [O que é o IAM?](#)
+    - [IAM Identity Center](#)
+    - [AWS Organizations](#)
+    - [Política de senhas](#)
+    - [CloudShell e CLI](#)
+    - [Credential Report e Access Advisor](#)
+    - [Resumo - IAM](#resumo---iam-identity-and-access-management)
+    - [Resumo - Organizaçõs](#resumo---organizações)
+- [A estrutura da AWS](#a-estrutura-da-aws)
+    - [Infraestrutura global da AWS](#)
+    - [AWS Share Responsability Model](#)
+- [Elastic Compute Cloud (EC2)](#elastic-compute-cloud-ec2)
+    - [Sobre EC2](#)
+    - [Tipos de EC2](#)
+    - [Modelos de aquisição](#)
+    - [Resumo - EC2](#resumo---ec2)
+    - [Resumo - Tipos de EC2](#resumo---tipos-de-ec2)
+    - [Resumo - Security Groups](#resumo---security-groups)
+- [Elastic Block Store (EBS)](#elastic-block-store-ebs)
+    - [Sobre EBS](#)
+    - [Valores e tipos de EBS](#)
+    - [Snapshot de um volume EBS](#)
+    - [Amazon Machine Image (AMI)](#)
+    - [Elastic File System (EFS)](#)
+    - [Amazon FSx](#)
+    - [Resumo - Elastic Block Store (EBS)](#resumo---elastic-block-store-ebs)
+
+
+
 # Conceitos
 
 - **O que é Cloud Computing?**
