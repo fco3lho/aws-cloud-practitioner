@@ -32,6 +32,10 @@
     - [Elastic File System (EFS)](#elastic-file-system-efs)
     - [Amazon FSx](#amazon-fsx)
     - [Resumo - Elastic Block Store (EBS)](#resumo---elastic-block-store-ebs)
+- [Escalabilidade na EC2](#escalabilidade-na-ec2)
+    - [Sobre o Auto Scaling](#sobre-o-auto-scaling)
+    - [Sobre o Elastic Load Balance (ELB)](#sobre-o-elastic-load-balance-elb)
+    - [Resumo em imagem de como funciona a escalabilidade na EC2](#resumo-em-imagem-de-como-funciona-a-escalabilidade-na-ec2)
 
 ---
 ---
@@ -308,3 +312,51 @@ O Amazon Elastic Block Store (EBS) é um serviço de armazenamento de alto desem
 4. **Backup com Snapshots**: O EBS oferece a capacidade de criar snapshots (cópias) dos seus volumes, que são armazenados no Amazon S3 para durabilidade. Esses snapshots podem ser usados para criar novos volumes EBS ou para aumentar o tamanho do volume.
 5. **Criptografia**: O EBS oferece a opção de criar volumes criptografados e controlar as chaves de criptografia usando o AWS Key Management Service (KMS). Isso ajuda a atender aos requisitos de conformidade e segurança.
 6. **Integração com a AWS**: EBS é profundamente integrado com outros serviços da AWS, como Amazon CloudWatch para monitoramento, AWS Identity and Access Management (IAM) para controle de acesso, e AWS Snapshot Scheduler para automação de backup.
+
+---
+---
+
+# Escalabilidade na EC2
+
+A escalabilidade na AWS pode ser dividida de duas formas:
+
+- **Escalabilidade vertical:** Conforme seja necessário, aumenta o poder computacional da instância (unidade). Por exemplo, inicialmente foi criada uma instância EC2 do tipo ********t2.micro********, mas houve um gargalo e foi necessário aumentar para uma instância EC2 do tipo **********t2.2xlarge**********.
+- ****************************************************Escalabilidade horizontal:**************************************************** Conforme seja necessário, cria novas instâncias iguais (mais de 1 unidade). Por exemplo, inicialmente foi criada uma instância EC2 do tipo ********t2.micro********, mas houve um gargalo e foi necessário criar mais instâncias EC2 do tipo *****t2.micro*****, totalizando agora 2 instâncias, mas podendo aumentar esse número conforme necessário.
+
+E essa escalabilidade é realizada por meio da elasticidade que os serviços de ************************Auto Scaling************************ e ******Elastic Load Balance (ELB)****** oferecem, realizando essas mudanças na estrutura de forma automática.
+
+A escalabilidade da estrutura também depende da disponibilidade dos servidores, ou seja, caso uma zona da AWS (*us-west1a*) caia por um motivo que não seja possível reparar, a sua estrutura passa a utilizar outra zona configurada de forma automatica (*us-west1b*), e isso é possível também graças ao **********************Auto Scaling**********************.
+
+Então, basicamente a escalabilidade no EC2 depende de:
+
+1. Tipo de escalabilidade
+2. Elasticidade
+3. Disponibilidade
+
+### Sobre o Auto Scaling
+
+O Amazon Auto Scaling é um serviço da AWS que permite o dimensionamento automático de recursos para manter a performance e a disponibilidade de suas aplicações. Ele funciona monitorando continuamente suas aplicações e ajustando a capacidade para manter a performance estável e previsível ao menor custo possível. Aqui estão algumas características principais do Amazon Auto Scaling:
+
+1. **Dimensionamento Automático**: O Auto Scaling permite que você defina políticas de dimensionamento que ajustam automaticamente a capacidade de recursos com base nas condições definidas. Por exemplo, você pode dimensionar automaticamente o número de instâncias do Amazon EC2 para atender à demanda de tráfego.
+2. **Otimização de Custo e Performance**: Ao ajustar continuamente a capacidade, o Auto Scaling ajuda a melhorar a disponibilidade e minimizar os custos. Quando a demanda aumenta, o Auto Scaling adiciona automaticamente mais recursos. Quando a demanda diminui, ele remove os recursos desnecessários para economizar dinheiro.
+3. **Balanceamento de Carga**: O Auto Scaling pode ser usado junto com o Elastic Load Balancing (ELB) para distribuir o tráfego de aplicações entre várias instâncias EC2 para melhorar a disponibilidade e a tolerância a falhas.
+4. **Saúde da Aplicação**: O Auto Scaling realiza verificações de saúde em suas instâncias EC2 e substitui automaticamente as instâncias que não estão saudáveis.
+5. **Integração AWS**: O Auto Scaling está integrado com uma série de serviços da AWS, incluindo Amazon CloudWatch, Amazon SNS, AWS CloudFormation, entre outros.
+6. **Flexibilidade**: O Auto Scaling permite dimensionar vários recursos, não se limitando apenas às instâncias EC2. Você também pode dimensionar serviços como Amazon DynamoDB, Amazon Aurora, Amazon ECS, e Amazon RDS.
+
+### Sobre o Elastic Load Balance (ELB)
+
+O Elastic Load Balancing (ELB) é um serviço da Amazon Web Services (AWS) que distribui automaticamente o tráfego de entrada de aplicações em várias instâncias EC2, contêineres, endereços IP e funções Lambda para garantir que as aplicações tenham alta disponibilidade e desempenho. Aqui estão algumas características principais do ELB:
+
+1. **Tipos de Balanceador de Carga**: O ELB oferece três tipos de balanceadores de carga que se adequam a diferentes necessidades de aplicação - o Balanceador de Carga de Aplicação (ALB) para tráfego HTTP e HTTPS, o Balanceador de Carga de Rede (NLB) para tráfego TCP, UDP e TLS, e o Classic Load Balancer para tráfego HTTP, HTTPS, TCP e SSL.
+2. **Alta disponibilidade**: O ELB distribui automaticamente o tráfego em várias instâncias em várias zonas de disponibilidade para garantir a continuidade do serviço, mesmo se uma ou mais instâncias falharem.
+3. **Escalabilidade**: O ELB escala automaticamente a sua capacidade de balanceamento de carga em resposta ao tráfego de entrada.
+4. **Integração com o Auto Scaling**: O ELB trabalha em conjunto com o Auto Scaling da AWS para garantir que há capacidade suficiente para atender ao tráfego de entrada e para substituir as instâncias que falham.
+5. **Segurança**: O ELB oferece recursos de segurança como a integração com o AWS Certificate Manager para SSL/TLS, e a integração com o AWS Identity Access Management (IAM) para controle de acesso.
+6. **Monitoramento e Auditoria**: O ELB integra-se com o Amazon CloudWatch e o AWS CloudTrail para monitorar o desempenho de suas aplicações e registrar as ações realizadas no seu balanceador de carga.
+
+### Resumo em imagem de como funciona a escalabilidade na EC2
+
+![Figura 1: Exemplo de uso da CloudShell para listar usuários criados no IAM.](images/fig2.png)
+
+Figura 2: Imagem ilustrativa de como o ELB e o Auto Scaling funcionam em conjunto para orquestrar as instâncias.
