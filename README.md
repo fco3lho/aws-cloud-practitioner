@@ -360,3 +360,16 @@ O Elastic Load Balancing (ELB) é um serviço da Amazon Web Services (AWS) que d
 ![Figura 1: Exemplo de uso da CloudShell para listar usuários criados no IAM.](images/fig2.png)
 
 Figura 2: Imagem ilustrativa de como o ELB e o Auto Scaling funcionam em conjunto para orquestrar as instâncias.
+
+---
+---
+
+# Armazenamento S3 (Simple Storage Service)
+
+### Sobre o S3
+
+É um serviço com acesso ilimitado de espaço. É utilizado para quando há a necessidade de um backup de arquivos, ou para disponibilização de arquivos para alguma aplicação, ou hospedar websites estáticos, ou armazenar vídeos.
+
+A S3 pode ser tanto muito barato quanto relativamente muito cara, tudo dependendo da velocidade em que se quer acesso aos dados armazenados nos objetos e quantidade de espaço utilizado. 
+
+Na S3, há a existência de <i>buckets</i>, que são onde os objetos são armazenados, estes sendo únicos em escala global e possuindo URLs para acesso por meio de outras aplicações ou serviços.
