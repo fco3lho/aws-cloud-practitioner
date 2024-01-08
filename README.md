@@ -357,7 +357,7 @@ O Elastic Load Balancing (ELB) é um serviço da Amazon Web Services (AWS) que d
 
 ### Resumo em imagem de como funciona a escalabilidade na EC2
 
-![Figura 1: Exemplo de uso da CloudShell para listar usuários criados no IAM.](images/fig2.png)
+![Figura 2: Imagem ilustrativa de como o ELB e o Auto Scaling funcionam em conjunto para orquestrar as instâncias.](images/fig2.png)
 
 Figura 2: Imagem ilustrativa de como o ELB e o Auto Scaling funcionam em conjunto para orquestrar as instâncias.
 
@@ -373,3 +373,41 @@ Figura 2: Imagem ilustrativa de como o ELB e o Auto Scaling funcionam em conjunt
 A S3 pode ser tanto muito barato quanto relativamente muito cara, tudo dependendo da velocidade em que se quer acesso aos dados armazenados nos objetos e quantidade de espaço utilizado. 
 
 Na S3, há a existência de <i>buckets</i>, que são onde os objetos são armazenados, estes sendo únicos em escala global e possuindo URLs para acesso por meio de outras aplicações ou serviços.
+
+### Classes do S3
+
+O Amazon S3 oferece uma variedade de classes de armazenamento que você pode escolher com base em performance, acesso aos dados, resiliência e requisitos de custo de suas workloads. As classes de armazenamento do S3 são desenvolvidas especificamente para fornecer o armazenamento de custo mais baixo para diferentes padrões de acesso. As classes de armazenamento do S3 são ideais para praticamente qualquer caso de uso, incluindo aqueles com necessidades de performance exigentes, data lakes, requisitos de residência, padrões de acesso desconhecidos ou variáveis ou armazenamento de arquivo.
+
+As classes de armazenamento S3 incluem:
+- S3 Intelligent-Tiering para economia automática de custos para dados com padrões de acesso desconhecidos ou variáveis; 
+- S3 Standard para dados acessados com frequência; 
+- S3 Express One Zone para seus dados acessados com mais frequência; 
+- S3 Standard-Infrequent Access (S3 Standard-IA) e S3 One Zone-Infrequent Access (S3 One Zone-IA) para dados acessados com menos frequência; 
+- S3 Glacier Instant Retrieval para dados de arquivo que precisam de acesso imediato; 
+- S3 Glacier Flexible Retrieval (antigo S3 Glacier) para dados de longo prazo raramente acessados que não requerem acesso imediato; 
+- Amazon S3 Glacier Deep Archive (S3 Glacier Deep Archive) para arquivamento de longo prazo e preservação digital com recuperação em horas com o menor custo de armazenamento na nuvem.
+
+### AWS Snow Family
+
+A AWS SNow Family é formada por dispositivos desenvolvidos especificamente para migrar petabytes de dados de forma econômica, offline, alugando um dispositivo Snow para migrar todos os dados necessários para a nuvem.
+
+Foi testado em campo para as condições mais extremas, oferecendo alta segurança e robustez em dispositivos compatíveis com computação e armazenamento.
+
+As opções de dispositivos variam para otimizar ambientes com restrições de espaço ou peso, portabilidade e opções de rede flexíveis.
+
+- <strong>Snowcone (Quantidade pequena de dados)</strong>: O AWS Snowcone é o dispositivo mais compacto e portátil. Pesando 2,1 kg (4,5 libras) e disponível com opções de SSD ou HDD, o Snowcone é robusto, seguro e desenvolvido especificamente para uso fora de um datacenter tradicional.
+- <strong>Snowball (Quantidade média de dados)</strong>: O AWS Snowball está disponível como dispositivo otimizado para computação ou dispositivo otimizado para armazenamento, sendo maior que o Snowcone.
+- <strong>Snowmobile (Quantidade grande de dados)</strong>: O AWS Snowmobile é um serviço de migração na escala de exabytes usado para movimentar quantidades de dados extremamente grandes para a AWS, migrando até 100 PB em um contêiner de transporte reforçado com 45 pés de comprimento puxado por um caminhão semirreboque.
+
+![Figura 3: Matriz de comparação de recursos da AWS Snow Family](images/fig3.png)
+
+Figura 3: Matriz de comparação de recursos da AWS Snow Family
+
+---
+---
+
+# Referências
+
+- https://aws.amazon.com/pt/s3/
+- https://aws.amazon.com/pt/s3/storage-classes/
+- https://aws.amazon.com/pt/snow/?nc=sn&loc=0
