@@ -406,8 +406,44 @@ Figura 3: Matriz de comparação de recursos da AWS Snow Family
 ---
 ---
 
+# Bancos de dados
+
+Um banco de dados é um sistema organizado para coletar, armazenar, gerenciar e recuperar informações de maneira eficiente. Ele serve como um repositório centralizado para armazenar dados estruturados, semiestruturados ou não estruturados que podem ser acessados, atualizados e gerenciados de forma segura e eficiente. Os bancos de dados desempenham um papel fundamental em muitas aplicações, desde sistemas de gerenciamento de empresas até sites e aplicativos.
+
+Existem dois principais tipos de bancos de dados: os bancos de dados relacionais e os bancos de dados não-relacionais (ou NoSQL). Vamos abordar cada um deles:
+
+- <strong>Banco de dados relacional (SQL):</strong>
+    - <strong>Estrutura: </strong>Os bancos de dados relacionais organizam dados em tabelas com linhas e colunas. Cada tabela representa uma entidade específica, e as relações entre entidades são estabelecidas por meio de chaves primárias e estrangeiras.
+    - <strong>Exemplos de SGBDR (Sistema de Gerenciamento de Bancos de Dados Relacional): </strong>MySQL, PostgreSQL, Oracle, SQL Server.
+    - <strong>Características: </strong>Garante a consistência e integridade dos dados, com suporte a transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade). É adequado para casos em que a estrutura dos dados é claramente definida e as consultas são bem estabelecidas.
+
+- <strong>Banco de dados não-relacional (NoSQL):</strong>
+    -   <strong>Estrutura: </strong>Os bancos de dados NoSQL têm modelos de dados mais flexíveis do que os relacionais. Podem ser baseados em documentos, grafos, pares de chave-valor ou famílias de colunas.
+    - <strong>Exemplos de SGBDR (Sistema de Gerenciamento de Bancos de Dados Relacional): </strong>MongoDB (documento), Neo4j (gráfico), Cassandra (família de colunas), Redis (pares de chave-valor).
+    - <strong>Características: </strong>Projetados para lidar com grandes volumes de dados, escalabilidade horizontal e flexibilidade de esquema. São frequentemente usados em cenários onde os requisitos de desempenho e escalabilidade são críticos, ou quando os dados são semiestruturados ou não estruturados.
+
+### Amazon Relational Database Service (RDS)
+
+O Amazon Relational Database Service, ou Amazon RDS é um serviço de banco de dados relacional distribuído da Amazon Web Services. É um serviço da web executado "na nuvem" projetado para simplificar a configuração, operação e escalonamento de um banco de dados relacional para uso em aplicativos, separando o banco de dados de uma instância EC2, por exemplo.
+
+### Elasticache
+
+O Elasticache armazena dados em memória, diferentemente do Aurora/MySQL/MariaDB que armazenam os dados em disco. Isso faz com que o desempenho do Elasticache seja muito alto em relação aos dados armazenados em disco, mas esse desempenho melhor tem um valor bem mais alto.
+
+### Amazon Neptune
+
+O Amazon Neptune é um serviço de banco de dados gerenciado pela Amazon Web Services (AWS) projetado para armazenar e consultar dados em grafos. Ele oferece suporte a modelos de dados de grafo, permitindo a criação e a consulta eficiente de relacionamentos entre entidades. O Amazon Neptune é baseado no popular banco de dados de grafo open-source chamado Apache TinkerPop Gremlin e oferece alta disponibilidade, escalabilidade e gerenciamento simplificado na infraestrutura da AWS. Ele é adequado para aplicativos que exigem análise de relacionamentos complexos e navegação eficiente em grandes conjuntos de dados conectados.
+
+### Amazon Glue
+
+O Amazon Glue é um serviço da Amazon Web Services (AWS) que facilita a preparação e carregamento de dados para análise. Ele oferece recursos de ETL (Extração, Transformação e Carga), permitindo automatizar o processo de movimentação e transformação de dados entre diferentes fontes de armazenamento, como bancos de dados, data lakes e data warehouses. O Amazon Glue simplifica tarefas de limpeza, enriquecimento e integração de dados, além de fornecer um ambiente gerenciado para a execução de jobs ETL escaláveis na infraestrutura da AWS.
+    
+---
+---
+
 # Referências
 
 - https://aws.amazon.com/pt/s3/
 - https://aws.amazon.com/pt/s3/storage-classes/
 - https://aws.amazon.com/pt/snow/?nc=sn&loc=0
+- https://us-east-1.console.aws.amazon.com/rds/
