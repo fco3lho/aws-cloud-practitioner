@@ -437,13 +437,87 @@ O Amazon Neptune é um serviço de banco de dados gerenciado pela Amazon Web Ser
 ### Amazon Glue
 
 O Amazon Glue é um serviço da Amazon Web Services (AWS) que facilita a preparação e carregamento de dados para análise. Ele oferece recursos de ETL (Extração, Transformação e Carga), permitindo automatizar o processo de movimentação e transformação de dados entre diferentes fontes de armazenamento, como bancos de dados, data lakes e data warehouses. O Amazon Glue simplifica tarefas de limpeza, enriquecimento e integração de dados, além de fornecer um ambiente gerenciado para a execução de jobs ETL escaláveis na infraestrutura da AWS.
-    
+
 ---
 ---
 
-# Referências
+# Rede
 
-- https://aws.amazon.com/pt/s3/
-- https://aws.amazon.com/pt/s3/storage-classes/
-- https://aws.amazon.com/pt/snow/?nc=sn&loc=0
-- https://us-east-1.console.aws.amazon.com/rds/
+### Sobre o VPC (Virtual Private Cloud)
+
+VPC (Virtual Private Cloud) é um serviço que permite que você crie uma rede virtual isolada na nuvem. A VPC permite que você provisione recursos da AWS em um ambiente virtual dedicado, proporcionando controle sobre a configuração da rede, como seleção de intervalos de endereços IP, criação de sub-redes e configuração de tabelas de rotas. Principais características da VPC na AWS:
+
+- <strong>Isolamento Lógico:</strong> A VPC oferece isolamento lógico entre os recursos da AWS, permitindo que você crie uma rede virtual privada na nuvem.
+- <strong>Controle de IP:</strong> Você pode escolher os intervalos de endereços IP para sua VPC e subdividi-los em sub-redes de acordo com suas necessidades.
+- <strong>Conectividade Segura:</strong> A VPC pode ser conectada de forma segura à sua infraestrutura local por meio de uma conexão VPN (Virtual Private Network) ou Direct Connect.
+- <strong>Segurança:</strong> Pode-se aplicar grupos de segurança e listas de controle de acesso de rede para controlar o tráfego de entrada e saída.
+- <strong>Escalabilidade:</strong> É possível expandir ou reduzir o tamanho da VPC conforme necessário, adicionando ou removendo sub-redes, por exemplo.
+- <strong>Recursos adicionais:</strong> A VPC pode ser associada a outros serviços da AWS, como balanceadores de carga, instâncias EC2 e bancos de dados RDS, permitindo a criação de ambientes complexos e altamente personalizáveis.
+
+### Sobre o NACL (Network Access Control List)
+
+NACL, ou Network Access Control List, é um serviço na Amazon Web Services (AWS) que atua como uma camada adicional de segurança para controlar o tráfego de entrada e saída em uma Virtual Private Cloud (VPC). As NACLs são listas de regras de segurança que determinam o que é permitido e o que é negado em termos de comunicação entre sub-redes na VPC. Principais características das NACLs na AWS:
+
+- <strong>Controle de Tráfego:</strong> As NACLs permitem que você defina regras de entrada e saída, especificando protocolos, portas e intervalos de endereços IP para permitir ou negar o tráfego.
+
+- <strong>Ordem de Avaliação:</strong> As regras nas NACLs são avaliadas em ordem, da primeira à última, e a primeira regra que corresponder a uma determinada comunicação será aplicada. Isso significa que a ordem das regras é significativa.
+
+- <strong>Nível de Sub-rede:</strong> As NACLs são associadas a nível de sub-rede na VPC, permitindo que você aplique políticas de segurança de maneira granular para diferentes partes da sua infraestrutura na nuvem.
+
+- <strong>Padrão Deny:</strong> Por padrão, uma NACL nega todo o tráfego, e você deve explicitamente permitir as comunicações necessárias através da configuração de regras específicas.
+
+- <strong>Stateless:</strong> As NACLs são stateless, o que significa que elas não mantêm informações sobre o estado das conexões. Cada pacote é avaliado independentemente com base nas regras configuradas.
+
+### VPC Peering
+
+O VPC Peering na Amazon Web Services (AWS) é uma maneira de conectar duas Virtual Private Clouds (VPCs) de forma segura, permitindo que as instâncias nessas VPCs comuniquem entre si usando endereços IP privados. Esse recurso facilita a integração e a colaboração entre diferentes ambientes na nuvem, mantendo o isolamento lógico e a segurança entre as VPCs. Principais características do VPC Peering:
+
+- <strong>Comunicação entre VPCs:</strong> O VPC Peering permite que as instâncias em VPCs diferentes se comuniquem diretamente, como se estivessem na mesma rede local.
+
+- <strong>Conexão Direta:</strong> A conexão entre VPCs é estabelecida diretamente, sem a necessidade de gateways, servidores ou tráfego pela Internet.
+
+- <strong>Isolamento de Tráfego:</strong> Apesar da comunicação direta, as VPCs permanecem isoladas logicamente. As políticas de controle de acesso, como grupos de segurança e listas de controle de acesso de rede (NACLs), ainda se aplicam.
+
+- <strong>Transit Gateway:</strong> O VPC Peering pode ser usado em conjunto com o AWS Transit Gateway para simplificar a conectividade entre várias VPCs e redes locais.
+
+- <strong>Configuração Simples:</strong> A configuração do VPC Peering é relativamente simples, exigindo a aceitação mútua da solicitação de peering entre os proprietários das VPCs envolvidas.
+
+- <strong>Transitividade:</strong> O VPC Peering pode ser transitivo, o que significa que se você tiver um VPC A peering com um VPC B e um VPC B peering com um VPC C, então o VPC A pode se comunicar com o VPC C através da relação de peering.
+
+### VPC Endpoints
+
+Os VPC Endpoints na Amazon Web Services (AWS) são componentes que permitem que instâncias dentro de uma Virtual Private Cloud (VPC) se comuniquem com serviços da AWS sem a necessidade de atravessar a Internet. Eles fornecem uma conexão direta e privada aos serviços da AWS, aumentando a segurança, a confiabilidade e muitas vezes melhorando o desempenho das comunicações. Existem dois tipos principais de VPC Endpoints na AWS:
+
+- VPC Endpoints de Interface:
+
+    - Permitem que instâncias dentro de uma VPC acessem serviços da AWS usando um endereço IP privado.
+    - São usados para serviços como Amazon S3 e Amazon DynamoDB.
+    - Estão associados a uma sub-rede específica em uma VPC e usam Elastic Network Interfaces (ENIs) para encaminhar o tráfego diretamente para o serviço AWS.
+
+- VPC Endpoints de Gateway:
+
+    - Permitem que instâncias dentro de uma VPC acessem serviços da AWS que são hospedados por meio da Internet pública.
+    - São usados para serviços como Amazon SNS e Amazon SQS.
+    - Não usam ENIs, mas, em vez disso, direcionam o tráfego para os serviços usando o gateway de rota dentro da VPC.
+
+Principais características dos VPC Endpoints:
+
+- <strong>Segurança:</strong> Ao usar VPC Endpoints, o tráfego permanece dentro da rede da AWS, eliminando a necessidade de roteamento pela Internet e melhorando a segurança.
+
+- <strong>Desempenho:</strong> A comunicação através de VPC Endpoints é muitas vezes mais eficiente em termos de desempenho do que o acesso pela Internet.
+
+- <strong>Configuração Simples:</strong> Configurar VPC Endpoints é relativamente simples, envolvendo a criação de políticas de controle de acesso e a associação dos endpoints com as sub-redes apropriadas.
+
+- <strong>Redução de Custos:</strong> Ao evitar o tráfego pela Internet, os VPC Endpoints podem contribuir para a redução de custos associados ao tráfego de saída.
+
+### AWS Private Link
+
+O AWS PrivateLink é um serviço na Amazon Web Services (AWS) que oferece uma maneira segura e escalável de acessar serviços AWS diretamente a partir da sua Virtual Private Cloud (VPC) sem a necessidade de tráfego pela Internet ou de um VPC Peering. Ele cria interfaces de rede na sua VPC que atuam como pontos de entrada para os serviços da AWS, permitindo a comunicação privada entre sua VPC e os serviços sem a exposição do tráfego pela Internet.
+
+### AWS Direct Connect
+
+O AWS Direct Connect é um serviço na Amazon Web Services (AWS) que oferece uma conexão dedicada de rede entre as instalações locais de um cliente e os data centers da AWS. Em vez de depender exclusivamente da Internet pública para acessar os recursos da AWS, o Direct Connect fornece uma conexão privada, mais previsível e de maior largura de banda, melhorando o desempenho, a confiabilidade e a segurança das comunicações.
+
+### AWS Transit Gateway
+
+O AWS Transit Gateway é um serviço da Amazon Web Services (AWS) que simplifica a conectividade de rede em ambientes de nuvem complexos e distribuídos. Ele atua como um ponto centralizado para roteamento de tráfego entre VPCs (Virtual Private Clouds), VPNs (Virtual Private Networks) e redes locais. O Transit Gateway facilita a construção e a gestão de arquiteturas de rede escaláveis, permitindo a comunicação eficiente entre diversos recursos e locais, diferentemente do AWS Peering que conecta VPC por VPC.
