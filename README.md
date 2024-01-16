@@ -36,6 +36,23 @@
     - [Sobre o Auto Scaling](#sobre-o-auto-scaling)
     - [Sobre o Elastic Load Balance (ELB)](#sobre-o-elastic-load-balance-elb)
     - [Resumo em imagem de como funciona a escalabilidade na EC2](#resumo-em-imagem-de-como-funciona-a-escalabilidade-na-ec2)
+- [Armazenamento S3 (Simple Storage Service)](#armazenamento-s3-simple-storage-service)
+    - [Sobre o S3](#sobre-o-s3)
+    - [Classes do S3](#classes-do-s3)
+    - [AWS Snow Family](#aws-snow-family)
+- [Banco de dados](#banco-de-dados)
+    - [Amazon Relational Database Service (RDS)](#amazon-relational-database-service-rds)
+    - [Elasticache](#elasticache)
+    - [Amazon Neptune](#amazon-neptune)
+    - [Amazon Glue](#amazon-glue)
+- [Rede](#rede)
+    - [Sobre o VPC (Virtual Private Cloud)](#sobre-o-vpc-virtual-private-cloud)
+    - [Sobre o NACL (Network Access Control List)](#sobre-o-nacl-network-access-control-list)
+    - [VPC Peering](#vpc-peering)
+    - [VPC Endpoints](#vpc-endpoints)
+    - [AWS Private Link](#aws-private-link)
+    - [AWS Direct Connect](#aws-direct-connect)
+    - [AWS Transit Gateway](#aws-transit-gateway)
 
 ---
 ---
