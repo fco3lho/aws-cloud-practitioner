@@ -53,6 +53,8 @@
     - [AWS Private Link](#aws-private-link)
     - [AWS Direct Connect](#aws-direct-connect)
     - [AWS Transit Gateway](#aws-transit-gateway)
+- [Route 53 - DNS da AWS](#route-53---dns-da-aws)
+    - [Políticas Route 53](#políticas-route-53)
 
 ---
 ---
@@ -538,3 +540,20 @@ O AWS Direct Connect é um serviço na Amazon Web Services (AWS) que oferece uma
 ### AWS Transit Gateway
 
 O AWS Transit Gateway é um serviço da Amazon Web Services (AWS) que simplifica a conectividade de rede em ambientes de nuvem complexos e distribuídos. Ele atua como um ponto centralizado para roteamento de tráfego entre VPCs (Virtual Private Clouds), VPNs (Virtual Private Networks) e redes locais. O Transit Gateway facilita a construção e a gestão de arquiteturas de rede escaláveis, permitindo a comunicação eficiente entre diversos recursos e locais, diferentemente do AWS Peering que conecta VPC por VPC.
+
+---
+---
+
+# Route 53 - DNS da AWS
+
+O Route 53 é o DNS (Domain Name System) da AWS, que fica encarregado de fazer a tradução de uma URL para um IP, por exemplo, traduz a URL "www.google.com" para o IP "8.8.8.8".
+
+### Políticas Route 53
+
+Dentre todas as políticas de roteamento, as principais são:
+
+- <strong>Simple Routing:</strong> É enviado uma URL para o Route 53 e ele retorna o endereçamento IP para esta URL.
+- <strong>Weighted Routing:</strong> É enviado uma URL para o Route 53 e ele retorna um IP, dentre alguns existentes para aquelas URL, dependendo do balanceamento de carga programado para aquele sistema.
+- <strong>Latency Routing:</strong> É enviado uma URL para o Route 53 e ele retorna um IP referente ao servidor que tenha a menor latência com o computador que requisitou.
+- <strong>Failover Routing:</strong> É criada uma hierarquia de servidores onde, sempre que enviado uma URL para o Route 53, ele irá retornar o IP referente ao servidor que está no topo hierarquico, mas caso esse servidor se torne indisponível, será retornado o IP referente ao servidor que está abaixo do primeiro, e assim sucessivamente.
+
