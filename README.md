@@ -55,6 +55,18 @@
     - [AWS Transit Gateway](#aws-transit-gateway)
 - [Route 53 - DNS da AWS](#route-53---dns-da-aws)
     - [Políticas Route 53](#políticas-route-53)
+- [Containers](#containers)
+    - [O que é Docker?](#o-que-é-docker)
+    - [Amazon Elastic Container Registry (Amazon ECR)](#amazon-elastic-container-registry-amazon-ecr)
+    - [Amazon Elastic Container Service (Amazon ECS)](#amazon-elastic-container-service-amazon-ecs)
+    - [Amazon Elastic Kubernetes Service (Amazon EKS)](#amazon-elastic-kubernetes-service-amazon-eks)
+- [Computação e Serverless](#computação-e-serverless)
+    - [AWS Batch](#aws-batch)
+    - [AWS LightSail](#aws-lightsail)
+    - [AWS Lambda](#aws-lambda)
+    - [AWS Fargate](#aws-fargate)
+- [Os 6 pilares do AWS Well-Architected Framework](#os-6-pilares-do-aws-well-architected-framework)
+- [Referência de estudos](#referência-de-estudos)
 
 ---
 ---
@@ -557,3 +569,101 @@ Dentre todas as políticas de roteamento, as principais são:
 - <strong>Latency Routing:</strong> É enviado uma URL para o Route 53 e ele retorna um IP referente ao servidor que tenha a menor latência com o computador que requisitou.
 - <strong>Failover Routing:</strong> É criada uma hierarquia de servidores onde, sempre que enviado uma URL para o Route 53, ele irá retornar o IP referente ao servidor que está no topo hierarquico, mas caso esse servidor se torne indisponível, será retornado o IP referente ao servidor que está abaixo do primeiro, e assim sucessivamente.
 
+---
+---
+
+# Containers
+
+### O que é Docker?
+
+Docker é uma plataforma de código aberto que permite que desenvolvedores e administradores de sistemas construam, empacotem e distribuam aplicações de forma rápida e fácil. Utilizando a tecnologia de contêineres, Docker possibilita o empacotamento de uma aplicação e suas dependências em uma unidade padronizada chamada contêiner. Aqui estão algumas das principais características e funcionalidades do Docker:
+
+- Portabilidade
+- Isolamento
+- Eficiência
+- Microserviços
+- Integração e entrega contínua
+
+### Amazon Elastic Container Registry (Amazon ECR)
+
+O Amazon Elastic Container Registry (ECR) é um serviço de armazenamento e gerenciamento de imagens de contêineres totalmente gerenciado, disponibilizado pela Amazon Web Services (AWS). Ele permite que os desenvolvedores armazenem, gerenciem e implantem imagens de contêineres Docker, Open Container Initiative (OCI) e Helm. Aqui estão algumas das principais características e funcionalidades do Amazon ECR:
+
+- Facilidade de integração
+- Segurança
+- Desempenho
+- Escalabilidade
+- Limpeza automatizada
+- Verificação de integridade
+
+### Amazon Elastic Container Service (Amazon ECS)
+
+O Amazon Elastic Container Service (ECS) é um serviço de gerenciamento de contêineres altamente escalável e de alto desempenho que suporta contêineres Docker e permite que você execute e gerencie facilmente aplicações em contêiner na Amazon Web Services (AWS). Aqui estão algumas das principais características e funcionalidades do Amazon ECS:
+
+- Integração com a AWS
+- Gerenciamento de contêineres
+- Escalabilidade
+- Segurança
+- Serviço gerenciado
+- Monitoramento e logs
+- Orquestração de contêineres
+
+### Amazon Elastic Kubernetes Service (Amazon EKS)
+
+O Amazon Elastic Kubernetes Service (EKS) é um serviço de gerenciamento de contêineres que facilita a execução, escalabilidade e monitoramento de aplicações baseadas em contêineres usando o Kubernetes, um sistema de orquestração de contêineres de código aberto, na plataforma AWS. Aqui estão algumas das principais características e funcionalidades do Amazon EKS:
+
+- Gerenciamento de Kubernetes
+- Compatibilidade com Kubernetes
+- Integração com a AWS
+- Segurança
+- Escalabilidade
+- Monitoramento e diagnóstico
+- Serviço gerenciado
+
+---
+---
+
+# Computação e Serverless
+
+### AWS Batch
+
+O AWS Batch é um serviço de computação em nuvem oferecido pela Amazon Web Services que facilita a execução de jobs em lote sem a necessidade de provisionar, gerenciar ou escalar servidores. Ele é especialmente útil para desenvolvedores, cientistas e engenheiros que precisam executar centenas ou milhares de jobs em paralelo.
+
+### AWS LightSail
+
+O Amazon Lightsail é um serviço de computação em nuvem da Amazon Web Services (AWS) que oferece servidores virtuais privados (VPS), armazenamento, bancos de dados e redes balanceamento de carga a um custo acessível. É projetado para simplificar o lançamento e gerenciamento de aplicações na AWS, especialmente para pequenas empresas, desenvolvedores e estudantes que estão começando a usar a nuvem.
+
+### AWS Lambda
+
+O Amazon Web Services (AWS) Lambda é um serviço de computação que executa seu código em resposta a eventos e gerencia automaticamente os recursos computacionais para você, tornando mais fácil a implantação de aplicações que escalam individualmente em resposta a novas informações.
+
+### AWS Fargate
+
+O AWS Fargate é um serviço de computação sem servidor para contêineres que permite executar aplicações sem ter que gerenciar a infraestrutura subjacente. Ele funciona com o Amazon Elastic Container Service (ECS) e o Amazon Elastic Kubernetes Service (EKS), simplificando a tarefa de executar contêineres em escala.
+
+---
+---
+
+# Os 6 pilares do AWS Well-Architected Framework
+
+Criar um sistema de software é muito parecido com a construção de um edifício. Se a fundação não for sólida, problemas estruturais podem prejudicar a integridade e a função do edifício.
+
+Ao criar soluções de tecnologia na Amazon Web Services (AWS), se você negligenciar os seis pilares de excelência operacional, segurança, confiabilidade, eficiência de desempenho, otimização de custos e sustentabilidade, pode se tornar um desafio construir um sistema que atenda às suas expectativas e requisitos .
+
+Incorporar esses pilares em sua arquitetura ajuda a produzir sistemas estáveis ​​e eficientes. Isso permite que você se concentre em outros aspectos do projeto, como requisitos funcionais.
+
+O AWS Well-Architected Framework ajuda os arquitetos de nuvem a criar a infraestrutura mais segura, de alto desempenho, resiliente e eficiente possível para seus aplicativos. A estrutura fornece uma abordagem consistente para clientes e parceiros da AWS avaliarem arquiteturas e fornece orientação para implementar designs que se adaptam às necessidades de seu aplicativo ao longo do tempo.
+
+- <strong>Pilar 1: </strong>Excelência operacional
+- <strong>Pilar 2: </strong>Segurança
+- <strong>Pilar 3: </strong>Confiabilidade
+- <strong>Pilar 4: </strong>Eficiência de desempenho
+- <strong>Pilar 5: </strong>Otimização de custos
+- <strong>Pilar 6: </strong>Sustentabilidade
+
+---
+---
+
+# Referência de estudos
+
+- [Curso para certificação AWS Cloud Practitioner CLF-C02 do Andre Iacono](https://www.udemy.com/course/certificacao-amazon-aws-cloud-practitioner-clf-c02/)
+- [Amazon AWS](https://aws.amazon.com/pt/)
