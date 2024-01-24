@@ -71,6 +71,11 @@
     - [AWS LightSail](#aws-lightsail)
     - [AWS Lambda](#aws-lambda)
     - [AWS Fargate](#aws-fargate)
+- [Billing e support](#billing-e-support)
+    - [AWS Control Tower](#aws-control-tower)
+    - [AWS RAM (Resource Access Manager)](#aws-ram-resource-access-manager)
+    - [AWS Service Catalog](#aws-service-catalog)
+    - [AWS Trusted Advisor](#aws-trusted-advisor)
 - [Os 6 pilares do AWS Well-Architected Framework](#os-6-pilares-do-aws-well-architected-framework)
 - [Referência de estudos](#referência-de-estudos)
 
@@ -686,6 +691,85 @@ O Amazon Web Services (AWS) Lambda é um serviço de computação que executa se
 ### AWS Fargate
 
 O AWS Fargate é um serviço de computação sem servidor para contêineres que permite executar aplicações sem ter que gerenciar a infraestrutura subjacente. Ele funciona com o Amazon Elastic Container Service (ECS) e o Amazon Elastic Kubernetes Service (EKS), simplificando a tarefa de executar contêineres em escala.
+
+---
+---
+
+# Billing e support
+
+### AWS Control Tower
+
+O AWS Control Tower é um serviço que oferece uma maneira fácil de configurar e governar um ambiente seguro e compatível, chamado de "landing zone", para executar suas cargas de trabalho na AWS. Aqui estão algumas das principais características e funcionalidades do AWS Control Tower:
+
+- **Configuração Fácil de Ambientes Multi-Account:** O Control Tower simplifica o processo de configurar um ambiente multi-account na AWS, fornecendo uma interface fácil de usar e diretrizes claras.
+
+- **Governança em Escala:** Com o Control Tower, você pode configurar políticas de governança em escala para o seu ambiente AWS. Isso inclui a configuração de regras de identidade e acesso, detecção de anomalias, isolamento de recursos, conformidade de logs e muito mais.
+
+- **Guardrails (Trilhas de Segurança):** Os guardrails são diretrizes pré-configuradas que ajudam a garantir a conformidade com as melhores práticas e regulamentações. Eles podem ser preventivos (impedindo ações não conformes) ou de detecção (identificando ações não conformes).
+
+- **Painel de Controle:** O Control Tower oferece um painel de controle unificado que dá uma visão geral do seu ambiente AWS, incluindo a conformidade com os guardrails.
+
+- **Registro de Atividade:** O Control Tower rastreia e registra todas as atividades em suas contas AWS por meio de logs de auditoria, permitindo uma revisão detalhada e a possibilidade de realizar auditorias.
+
+- **Automação de Gerenciamento de Contas:** O Control Tower permite a criação automatizada de novas contas AWS com as configurações de base corretas, economizando tempo e esforço.
+
+Em suma, o AWS Control Tower é uma poderosa ferramenta de governança na nuvem que permite às organizações configurar, gerenciar e monitorar ambientes AWS de maneira segura e eficaz, garantindo a conformidade com as melhores práticas e regulamentações.
+
+### AWS RAM (Resource Access Manager)
+
+O AWS Resource Access Manager (RAM) é um serviço que permite compartilhar recursos da AWS entre várias contas de maneira simples e segura. Ele é projetado para resolver o desafio de operar em ambientes multi-conta, onde recursos como sub-redes, snapshots do Amazon RDS, clusters do AWS Transit Gateway, e muitos outros precisam ser compartilhados entre diferentes contas.Aqui estão algumas das principais características e funcionalidades do AWS RAM:
+
+- **Compartilhamento de Recursos Simplificado:** O AWS RAM permite que você compartilhe seus recursos da AWS com qualquer conta AWS ou dentro de sua organização AWS sem a necessidade de criar e gerenciar políticas de permissão IAM personalizadas.
+
+- **Controle Fino de Acesso:** Com o AWS RAM, você mantém a propriedade e o controle sobre os recursos compartilhados. Você pode especificar quais recursos deseja compartilhar e com quais contas.
+
+- **Compartilhamento de Múltiplos Recursos:** O AWS RAM suporta o compartilhamento de diversos tipos de recursos, incluindo sub-redes da Amazon VPC, snapshots do Amazon RDS, e clusters do AWS Transit Gateway.
+
+- **Integração com AWS Organizations:** Se você estiver usando o AWS Organizations para gerenciar suas contas AWS, o AWS RAM permite compartilhar recursos de maneira fácil e segura entre todas as contas em sua organização.
+
+- **Redução de Custo e Complexidade:** Ao compartilhar recursos, você pode evitar a duplicação desnecessária de recursos, o que pode resultar em economia de custos e redução da complexidade de gerenciamento.
+
+- **Segurança**: O AWS RAM permite que você compartilhe seus recursos de maneira segura. Todos os recursos compartilhados são mantidos em suas contas originais, e as políticas de permissões IAM aplicáveis são respeitadas.
+
+Resumindo, o AWS Resource Access Manager é uma solução poderosa para organizações que operam em ambientes multi-conta, facilitando o compartilhamento seguro e eficiente de recursos da AWS entre contas.
+
+### AWS Service Catalog
+
+O AWS Service Catalog é um serviço de gerenciamento de serviços que permite que organizações criem e gerenciem catálogos de serviços de TI aprovados para uso na AWS. Aqui estão algumas das principais características e funcionalidades do AWS Service Catalog:
+
+- **Governança e Controle:** O AWS Service Catalog permite que administradores de TI mantenham um controle firme sobre os serviços da AWS utilizados dentro de suas organizações. Eles podem especificar quais serviços os usuários têm permissão para lançar, implementar controles de custos e garantir que todas as implementações estejam em conformidade com as políticas corporativas.
+
+- **Autoatendimento:** Usuários podem navegar pelos catálogos de serviços aprovados e lançar os serviços que precisam por conta própria, sem precisar de assistência direta da equipe de TI.
+
+- **Padronização de Serviços:** O AWS Service Catalog permite criar e gerenciar portfólios de produtos que são aprovados para uso na organização. Isso ajuda a garantir que os serviços lançados pelos usuários estejam de acordo com as melhores práticas e políticas da organização.
+
+- **Integração com Outros Serviços AWS:** O AWS Service Catalog se integra com outros serviços AWS, como AWS CloudFormation, AWS Identity and Access Management (IAM), AWS Config, entre outros.
+
+- **Controle de Custo e Orçamento:** Ao restringir quais serviços podem ser lançados e como eles são configurados, o AWS Service Catalog pode ajudar as organizações a manterem o controle dos custos e a garantirem que os recursos da AWS são usados de forma eficiente.
+
+- **Rastreamento e Auditoria:** O AWS Service Catalog rastreia o uso de serviços, o que facilita a auditoria e o cumprimento dos requisitos de conformidade.
+
+Em suma, o AWS Service Catalog é uma ferramenta valiosa para organizações que precisam manter um controle rigoroso sobre o uso dos serviços da AWS, enquanto permitem que os usuários acessem e lancem os serviços de que precisam de forma autônoma.
+
+### AWS Trusted Advisor
+
+O AWS Trusted Advisor é um serviço que fornece orientações em tempo real para ajudar você a provisionar seus recursos de acordo com as melhores práticas da AWS. Ele verifica o ambiente da AWS e compara-o com as diretrizes estabelecidas em cinco categorias: custo, desempenho, segurança, tolerância a falhas e otimização de serviço. Aqui estão algumas das principais características e funcionalidades do AWS Trusted Advisor:
+
+- **Orientações sobre Melhores Práticas:** O AWS Trusted Advisor fornece recomendações com base em práticas recomendadas da AWS, ajudando a otimizar o uso dos serviços da AWS.
+
+- **Otimização de Custo:** O AWS Trusted Advisor pode ajudar a identificar oportunidades de economia de custos, sugerindo alterações como desligar recursos não utilizados ou otimizar o uso do Amazon EC2, entre outros.
+
+- **Desempenho:** O serviço examina a infraestrutura da AWS e sugere maneiras de melhorar a velocidade e a confiabilidade de suas aplicações.
+
+- **Segurança:** O Trusted Advisor verifica a conformidade de sua infraestrutura com práticas de segurança recomendadas, como verificar a exposição de buckets do Amazon S3, chaves IAM não utilizadas e muito mais.
+
+- **Tolerância a falhas:** O serviço fornece recomendações sobre como você pode tornar sua infraestrutura mais resiliente a interrupções, incluindo a implementação de balanceamento de carga, backups regulares e mais.
+
+- **Alertas e Notificações:** O Trusted Advisor pode enviar notificações via Amazon SNS (Simple Notification Service) quando surgem novos problemas ou quando os existentes são resolvidos.
+
+- **Dashboard:** O AWS Trusted Advisor possui um painel fácil de usar que exibe um resumo visual de suas verificações e alertas.
+
+Em resumo, o AWS Trusted Advisor é uma ferramenta valiosa que ajuda as organizações a otimizar seus recursos da AWS, economizar dinheiro, melhorar o desempenho do sistema, fortalecer a segurança e aumentar a tolerância a falhas.
 
 ---
 ---
