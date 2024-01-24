@@ -60,6 +60,11 @@
     - [Amazon Elastic Container Registry (Amazon ECR)](#amazon-elastic-container-registry-amazon-ecr)
     - [Amazon Elastic Container Service (Amazon ECS)](#amazon-elastic-container-service-amazon-ecs)
     - [Amazon Elastic Kubernetes Service (Amazon EKS)](#amazon-elastic-kubernetes-service-amazon-eks)
+- [Integrações Cloud](#integrações-cloud)
+    - [AWS Kinesis](#aws-kinesis)
+    - [AWS SNS (Simple Notification Service)](#aws-sns-simple-notification-service)
+    - [AWS SQS (Simple Queue Service)](#aws-sqs-simple-queue-service)
+    - [AWS SES (Simple Email Service)](#aws-ses-simple-email-service)
 - [Computação e Serverless](#computação-e-serverless)
     - [AWS Batch](#aws-batch)
     - [AWS LightSail](#aws-lightsail)
@@ -618,6 +623,43 @@ O Amazon Elastic Kubernetes Service (EKS) é um serviço de gerenciamento de con
 - Escalabilidade
 - Monitoramento e diagnóstico
 - Serviço gerenciado
+
+---
+---
+
+# Integrações Cloud
+
+### AWS Kinesis
+
+O Amazon Kinesis processa e analisa de forma econômica os dados de streaming em qualquer escala como um serviço totalmente gerenciado. Com o Kinesis, você pode consumir dados em tempo real como vídeo, áudio, logs de aplicações, clickstreams de sites e dados de telemetria de IoT para machine learning (ML), análises e outras aplicações.
+
+![Figura 4: Exemplo de como AWS Kinesis funciona](images/fig4.png)
+
+Figura 4: Exemplo de como AWS Kinesis funciona
+
+### AWS SNS (Simple Notification Service)
+
+O Amazon Simple Notiﬁcation Service (Amazon SNS) envia notificações de duas maneiras: A2A e A2P. A maneira A2A fornece um sistema de mensagens com alto throughput e baseado em push para mensagens entre diversos sistemas distribuídos, microsserviços e aplicações sem servidor orientadas a eventos. A funcionalidade A2P, por sua vez, permite o envio de mensagens para seus clientes utilizando textos SMS, notificações por push e e-mail. 
+
+![Figura 5: Exemplo de como AWS SNS funciona](images/fig5.png)
+
+Figura 5: Exemplo de como AWS SNS funciona
+
+### AWS SQS (Simple Queue Service)
+
+O Amazon Simple Queue Service (SQS) permite que você envie, armazene e receba mensagens entre componentes de software em qualquer volume, sem perder mensagens ou precisar que outros serviços estejam disponíveis.
+
+![Figura 6: Exemplo de como AWS SQS funciona](images/fig6.png)
+
+Figura 6: Exemplo de como AWS SQS funciona
+
+### AWS SES (Simple Email Service)
+
+O Amazon Simple Email Service (Amazon SES) permite que você alcance clientes com confiança sem um servidor de e-mail on-premises do Simple Mail Transfer Protocol (SMTP) usando a API do Amazon SES ou a interface SMTP.
+
+![Figura 7: Exemplo de como AWS SES funciona](images/fig7.png)
+
+Figura 7: Exemplo de como AWS SES funciona
 
 ---
 ---
