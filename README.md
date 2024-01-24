@@ -76,6 +76,16 @@
     - [AWS RAM (Resource Access Manager)](#aws-ram-resource-access-manager)
     - [AWS Service Catalog](#aws-service-catalog)
     - [AWS Trusted Advisor](#aws-trusted-advisor)
+- [Machine learning e AI](#machine-learning-e-ai)
+    - [Amazon Transcribe](#amazon-transcribe)
+    - [Amazon Rekognition](#amazon-rekognition)
+    - [Amazon Translate](#amazon-translate)
+    - [Amazon Polly](#amazon-polly)
+    - [Amazon Comprehend](#amazon-comprehend)
+    - [Amazon Lex](#amazon-lex)
+    - [Amazon Kendra](#amazon-kendra)
+    - [Amazon Textract](#amazon-texract)
+    - [Amazon SageMaker](#amazon-sagemaker)
 - [Os 6 pilares do AWS Well-Architected Framework](#os-6-pilares-do-aws-well-architected-framework)
 - [Referência de estudos](#referência-de-estudos)
 
@@ -770,6 +780,47 @@ O AWS Trusted Advisor é um serviço que fornece orientações em tempo real par
 - **Dashboard:** O AWS Trusted Advisor possui um painel fácil de usar que exibe um resumo visual de suas verificações e alertas.
 
 Em resumo, o AWS Trusted Advisor é uma ferramenta valiosa que ajuda as organizações a otimizar seus recursos da AWS, economizar dinheiro, melhorar o desempenho do sistema, fortalecer a segurança e aumentar a tolerância a falhas.
+
+---
+---
+
+# Machine learning e AI
+
+### Amazon Transcribe
+
+Converte automaticamente a fala em texto.
+
+### Amazon Rekognition
+
+O Amazon Rekognition oferece recursos de visão computacional (CV) pré-treinados e personalizáveis para extrair informações e insights das suas imagens e vídeos.
+
+### Amazon Translate
+
+O Amazon Translate permite localizar conteúdo para diversos usuários no mundo e traduzir e analisar grandes volumes de texto para ativar a comunicação multilíngue entre os usuários.
+
+### Amazon Polly
+
+O Amazon Polly usa tecnologias de aprendizado profundo para sintetizar a fala humana com sons naturais, para que você possa converter artigos em fala.
+
+### Amazon Comprehend
+
+O Amazon Comprehend é um serviço de processamento de linguagem natural (NLP) que usa machine learning para descobrir insights e relações nos textos.
+
+### Amazon Lex
+
+Amazon Lex é um serviço para criar interfaces de conversação em qualquer aplicativo usando voz e texto. Ele alimenta o assistente virtual Amazon Alexa.
+
+### Amazon Kendra
+
+O Amazon Kendra é um serviço de pesquisa empresarial inteligente que ajuda você a pesquisar em diferentes repositórios de conteúdos com conectores integrados.
+
+### Amazon Texract
+
+O Amazon Textract é baseado na mesma tecnologia comprovada e altamente escalável de aprendizado profundo desenvolvida pelos cientistas de visão computadorizada da Amazon para analisar diariamente bilhões de imagens e vídeos.
+
+### Amazon SageMaker
+
+Amazon SageMaker é um serviço de Machine Learning totalmente gerenciado. Com o SageMaker, cientistas de dados e desenvolvedores podem criar e treinar modelos de machine learning com rapidez e facilidade e, depois, implantá-los diretamente em um ambiente hospedado pronto para produção. O serviço oferece uma instância de notebook de autoria Jupyter integrado para facilitar o acesso a fontes de dados para fins de exploração e análise, sem necessidade de gerenciar servidores. Além disso, oferece algoritmos comuns de Machine Learning que são otimizados para execução eficiente com volumes de dados extremamente altos em um ambiente distribuído. Com suporte nativo para algoritmos e estruturas próprios do usuário, o SageMaker oferece opções flexíveis de treinamento distribuído que se ajustam a fluxos de trabalho específicos. 
 
 ---
 ---
