@@ -39,6 +39,7 @@
 - [Armazenamento S3 (Simple Storage Service)](#armazenamento-s3-simple-storage-service)
     - [Sobre o S3](#sobre-o-s3)
     - [Classes do S3](#classes-do-s3)
+    - [AWS Athena](#aws-athena)
     - [AWS Snow Family](#aws-snow-family)
 - [Banco de dados](#banco-de-dados)
     - [Amazon Relational Database Service (RDS)](#amazon-relational-database-service-rds)
@@ -253,11 +254,11 @@ As instâncias EC2 podem ser divididas em:
 
 ### Modelos de aquisição
 
-1. ************************Sob demanda ($$$$):************************ É adquirido uma instância sob demanda sem contrato, o que torna o seu valor um pouco mais elevado, pela AWS não ter garantia que continuará usando esse hardware por muito tempo, e ocupando esse hardware de futuros possíveis clientes.
-2. **********************************Saving Plans ($$):********************************** É adquirido uma instância sob demanda com um contrato de 1 ou 3 anos, dando a garantia para a AWS do tempo mínimo que será utilizado o serviço, baranteando o mesmo.
-3. **************Spot ($):************** É adquirido uma instância sob o hardware que não está sendo usado por ninguém na plataforma da AWS, porém quando algum outro cliente solicita esse mesmo hardware para outros serviços, a instância sob modelo Spot é encerrada para abrir espaço para o outro cliente, o que torna o serviço mais arriscado, porém bem mais barato.
-4. **********************************************Hosts dedicados ($$$$$):********************************************** É adquirido uma instância com um host dedicado, ou seja, não é feito compartilhamento de hardware com outros clientes, o que torna esse modelo bem mais caro que os anteriores.
-5. ********************************************************Capacidade por demanda ($$$):******************************************************** É adquirido uma instância com um início e um fim para a mesma, sendo mais barata que o modelo ‘Sob demanda’.
+1. **Sob demanda / On-demand ($$$$):** É adquirido uma instância sob demanda sem contrato, o que torna o seu valor um pouco mais elevado, pela AWS não ter garantia que continuará usando esse hardware por muito tempo, e ocupando esse hardware de futuros possíveis clientes.
+2. **Saving plans / Reserved ($$):** É adquirido uma instância sob demanda com um contrato de 1 ou 3 anos, dando a garantia para a AWS do tempo mínimo que será utilizado o serviço, baranteando o mesmo.
+3. **Spot ($):** É adquirido uma instância sob o hardware que não está sendo usado por ninguém na plataforma da AWS, porém quando algum outro cliente solicita esse mesmo hardware para outros serviços, a instância sob modelo Spot é encerrada para abrir espaço para o outro cliente, o que torna o serviço mais arriscado, porém bem mais barato.
+4. **Hosts dedicados ($$$$$):** É adquirido uma instância com um host dedicado, ou seja, não é feito compartilhamento de hardware com outros clientes, o que torna esse modelo bem mais caro que os anteriores.
+5. **Capacidade por demanda ($$$):** É adquirido uma instância com um início e um fim para a mesma, sendo mais barata que o modelo ‘Sob demanda’.
     
 ## Resumo - EC2
 
@@ -422,6 +423,10 @@ As classes de armazenamento S3 incluem:
 - S3 Glacier Instant Retrieval para dados de arquivo que precisam de acesso imediato; 
 - S3 Glacier Flexible Retrieval (antigo S3 Glacier) para dados de longo prazo raramente acessados que não requerem acesso imediato; 
 - Amazon S3 Glacier Deep Archive (S3 Glacier Deep Archive) para arquivamento de longo prazo e preservação digital com recuperação em horas com o menor custo de armazenamento na nuvem.
+
+### AWS Athena
+
+O Amazon Athena é um serviço de análise interativo e sem servidor criado em frameworks de código aberto, com suporte a formatos de tabela e arquivo abertos. O Athena fornece uma maneira simplificada e flexível de analisar petabytes de dados onde eles residem. É possível analisar dados ou criar aplicações a partir de um data lake do Amazon Simple Storage Service (S3) e mais de 30 fontes de dados, incluindo fontes de dados on-premises ou outros sistemas em nuvem usando SQL ou Python. O Athena é construído com mecanismos Trino e Presto de código aberto e frameworks Apache Spark, sem necessidade de provisionamento ou configuração.
 
 ### AWS Snow Family
 
