@@ -937,6 +937,30 @@ O Amazon EMR (Elastic MapReduce) é um serviço de big data da AWS que permite p
 
 O serviço Amazon CloudFront aproveita a infraestrutura de redes de borda distribuídas globalmente, posicionando-se em proximidade estratégica dos usuários finais. Essa arquitetura permite não apenas uma resposta mais rápida, mas também a capacidade de armazenar em cache conteúdos frequentemente acessados. Ao fazer isso, a entrega de dados solicitados torna-se mais eficiente, reduzindo a latência e proporcionando uma experiência mais ágil e otimizada para os usuários.
 
+### Amazon AppFlow
+
+Com o AppFlow, não é preciso investir tempo significativo e uma equipe de desenvolvedores altamente qualificada para criar e manter conectores de API personalizados de serviços da AWS com o objetivo de fazer o intercâmbio de dados com aplicativos de SaaS.
+
+### Amazon EventBridge
+
+O Amazon EventBridge é um barramento de eventos sem servidor que torna mais fácil a criação de aplicações orientadas por eventos em escala usando eventos gerados com base em suas aplicações, aplicações integradas de software como serviço (SaaS) e serviços da AWS.
+
+### AWS DMS (Database Migration Service)
+
+O AWS Database Migration Service (AWS DMS) ajuda você a migrar bancos de dados para a AWS de modo rápido e seguro. O banco de dados de origem permanece totalmente operacional durante a migração, minimizando o tempo de inatividade de aplicações que dependem do banco de dados
+
+### Amazon Redshift
+
+O serviço do Amazon Redshift gerencia todo o trabalho de configuração, operação e escalabilidade de um data warehouse. Essas tarefas incluem capacidade de provisionamento, monitoramento e backup do cluster e aplicação de patches e atualizações ao mecanismo Amazon Redshift.
+
+### AWS Config
+
+O AWS Config é um serviço da AWS que fornece monitoramento e gerenciamento contínuo dos recursos e configurações da sua conta. Ele rastreia alterações em recursos, registra conformidade com políticas e cria snapshots do estado da infraestrutura ao longo do tempo. O AWS Config ajuda a manter a conformidade, a identificar e remediar desvios de configuração, além de possibilitar a auditoria e a análise de alterações. Com regras de avaliação personalizáveis, ele ajuda a automatizar a verificação de conformidade e a segurança dos recursos da AWS, melhorando a governança e a segurança da nuvem.
+
+### AWS Elastic Beanstalk
+
+O Elastic Beanstalk implanta aplicações da Web para que você possa se concentrar em seus negócios. É um serviço para implementar e escalar aplicações e serviços da Web enquanto você só precisa se preocupar com o desenvolvimento do seu código. Esse serviço gerencia automaticamente a implantação, desde o provisionamento de capacidade, balanceamento de carga e escalabilidade automática até o monitoramento da integridade de aplicações.
+
 ---
 ---
 
