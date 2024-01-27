@@ -87,6 +87,24 @@
     - [Amazon Textract](#amazon-texract)
     - [Amazon SageMaker](#amazon-sagemaker)
 - [Os 6 pilares do AWS Well-Architected Framework](#os-6-pilares-do-aws-well-architected-framework)
+- [Outros serviços](#outros-serviços)
+    - [Amazon Cognito](#amazon-cognito)
+    - [Amazon STS (Security Token Service)](#amazon-sts-security-token-service)
+    - [AWS Device Farm](#aws-device-farm)
+    - [AWS AppSync](#aws-appsync)
+    - [AWS Amplify](#aws-amplify)
+    - [AWS IoT Core](#aws-iot-core)
+    - [AWS Step Functions](#aws-step-functions)
+    - [Amazon Backup](#amazon-backup)
+    - [AWS DR (Disaster Recovery)](#aws-dr-disaster-recovery)
+    - [AWS WorkSpaces](#aws-workspaces)
+    - [AWS AppStream 2.0](#aws-appstream-20)
+    - [AWS Macie](#aws-macie)
+    - [AWS Guard Duty](#aws-guard-duty)
+    - [AWS Cloud Formation](#aws-cloud-formation)
+    - [Amazon MQ](#amazon-mq)
+    - [Amazon EMR (Elastic MapReduce)](#amazon-emr-elastic-mapreduce)
+    - [Amazon CloudFront](#amazon-cloudfront)
 - [Referência de estudos](#referência-de-estudos)
 
 ---
@@ -814,7 +832,7 @@ Amazon Lex é um serviço para criar interfaces de conversação em qualquer apl
 
 O Amazon Kendra é um serviço de pesquisa empresarial inteligente que ajuda você a pesquisar em diferentes repositórios de conteúdos com conectores integrados.
 
-### Amazon Texract
+### Amazon Textract
 
 O Amazon Textract é baseado na mesma tecnologia comprovada e altamente escalável de aprendizado profundo desenvolvida pelos cientistas de visão computadorizada da Amazon para analisar diariamente bilhões de imagens e vídeos.
 
@@ -841,6 +859,83 @@ O AWS Well-Architected Framework ajuda os arquitetos de nuvem a criar a infraest
 - <strong>Pilar 4: </strong>Eficiência de desempenho
 - <strong>Pilar 5: </strong>Otimização de custos
 - <strong>Pilar 6: </strong>Sustentabilidade
+
+---
+---
+
+# Outros serviços
+
+### Amazon Cognito
+
+O Amazon Cognito é um serviço da Amazon Web Services (AWS) que proporciona uma solução completa para autenticação, autorização e gerenciamento de identidades em aplicativos web e móveis. Ele simplifica o processo de integração de recursos de autenticação segura em aplicativos, permitindo que os desenvolvedores adicionem facilmente recursos de autenticação e gerenciamento de usuários sem a necessidade de construir esses sistemas a partir do zero.
+
+A principal característica do Amazon Cognito, é que o mesmo permite que os usuários se registrem em aplicativos e façam login de maneira segura usando serviços de autenticação padrão, como login com e-mail, número de telefone, redes sociais ou provedores de identidade empresarial.
+
+### Amazon STS (Security Token Service)
+
+O Amazon Security Token Service (STS) é um serviço da Amazon Web Services (AWS) que fornece tokens temporários e credenciais temporárias, com o objetivo principal de conceder acesso temporário e seguro a recursos da AWS. O Amazon STS é especialmente útil em cenários em que é necessário delegar permissões de forma segura, com limites de tempo e sem a necessidade de compartilhar permanentemente as credenciais de acesso.
+
+### AWS Device Farm
+
+O Amazon Device Farm é um serviço da Amazon Web Services (AWS) projetado para facilitar o teste de aplicativos móveis em uma ampla variedade de dispositivos reais. Ele oferece uma infraestrutura de teste na nuvem que permite aos desenvolvedores executar testes automatizados e manuais em aplicativos Android e iOS em diversos dispositivos reais, permitindo identificar e corrigir problemas de compatibilidade, desempenho e funcionalidade.
+
+### AWS AppSync
+
+O Amazon AppSync é um serviço gerenciado pela Amazon Web Services (AWS) que simplifica o desenvolvimento de aplicativos móveis e web, permitindo que desenvolvedores criem rapidamente APIs (Interfaces de Programação de Aplicações) seguras e escaláveis para suas aplicações. Ele é especialmente útil para aplicativos que exigem dados em tempo real, como aplicativos colaborativos, de bate-papo, e-commerce, jogos multiplayer e outras aplicações que dependem de atualizações em tempo real.
+
+### AWS Amplify
+
+O Amazon Amplify é um conjunto de ferramentas e serviços da Amazon Web Services (AWS) projetado para facilitar o desenvolvimento de aplicativos web e móveis, fornecendo uma abordagem simplificada e acelerada para criar, implantar e gerenciar aplicações em nuvem. Amplify é particularmente adequado para desenvolvedores que buscam criar aplicativos de maneira eficiente, sem a necessidade de gerenciar manualmente a infraestrutura subjacente.
+
+### AWS IoT Core
+
+O Amazon IoT Core é um serviço da Amazon Web Services (AWS) projetado para fornecer uma plataforma gerenciada e escalável para a Internet das Coisas (IoT). Ele facilita a conexão, o gerenciamento e a comunicação segura entre dispositivos IoT e aplicativos na nuvem. O Amazon IoT Core oferece uma série de recursos para suportar o desenvolvimento de soluções IoT seguras e eficientes.
+
+### AWS Step Functions
+
+O Amazon Step Functions é um serviço gerenciado da Amazon Web Services (AWS) que permite coordenar e orquestrar facilmente fluxos de trabalho (workflows) distribuídos, seja para automação de processos, integração de serviços ou execução de tarefas sequenciais em aplicações distribuídas. Ele simplifica o desenvolvimento de aplicações baseadas em estado, permitindo a criação de fluxos de trabalho com componentes visuais e facilitando a coordenação de serviços AWS e a execução de lógica de aplicação.
+
+### Amazon Backup
+
+O Amazon Backup é um serviço da Amazon Web Services (AWS) projetado para facilitar o processo de backup e recuperação de dados em serviços e recursos da AWS. Ele fornece uma solução centralizada para criar, gerenciar e automatizar cópias de segurança (backups) de recursos, como volumes do Amazon EBS, bancos de dados do Amazon RDS, tabelas do Amazon DynamoDB, sistemas de arquivos do Amazon FSx, entre outros.
+
+### AWS DR (Disaster Recovery)
+
+O AWS Disaster Recovery (DR) refere-se ao conjunto de estratégias e procedimentos implementados na plataforma AWS para proteger os dados e os sistemas de TI de uma organização contra desastres. Esses desastres podem ser naturais ou causados pelo homem e podem resultar em perda de dados, interrupção do serviço ou falha do sistema.
+
+As soluções de recuperação de desastres da AWS são projetadas para minimizar o tempo de inatividade e a perda de dados após um desastre, permitindo que as organizações recuperem rapidamente suas operações normais.
+
+### AWS WorkSpaces
+
+Amazon AWS WorkSpaces é um serviço gerenciado de desktop como serviço (DaaS), que permite provisionar desktops na nuvem para os usuários acessarem a qualquer hora, de qualquer lugar, usando qualquer dispositivo suportado. Este serviço é uma solução virtual de substituição de desktop que ajuda a reduzir os custos operacionais e melhorar a segurança dos dados.
+
+### AWS AppStream 2.0
+
+Amazon AppStream 2.0 é um serviço gerenciado da Amazon Web Services (AWS) que permite o streaming seguro de aplicativos de desktop para usuários sem reescrever esses aplicativos para a nuvem. Basicamente, o AppStream 2.0 fornece aos usuários acesso instantâneo a aplicativos de desktop por meio de um navegador da web.
+
+### AWS Macie
+
+AWS Macie é um serviço de segurança e privacidade de dados totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS.
+
+### AWS Guard Duty
+
+AWS GuardDuty é um serviço de detecção de ameaças que monitora continuamente atividades mal-intencionadas e comportamentos não autorizados para proteger suas contas, cargas de trabalho e dados da AWS armazenados no Amazon S3.
+
+### AWS Cloud Formation
+
+O AWS CloudFormation permite modelar, provisionar e gerenciar recursos da AWS e de terceiros ao tratar a infraestrutura como código. Como código, a infraestrutura pode ser alterada, versionada e automatizada para atender diversos requisitos de uma implementação de infraestrutura, como o apresentado na questão. Template (modelo) é o nome dado ao arquivo onde são declarados todos os serviços necessários na infraestrutura desejada.
+
+### Amazon MQ
+
+O Amazon MQ é um serviço gerenciado de mensageria que facilita a configuração e operação de brokers de mensagens, compatível com os protocolos Apache ActiveMQ e RabbitMQ. Ele fornece uma solução escalável e de alta disponibilidade para troca de mensagens entre aplicativos distribuídos. Os benefícios do Amazon MQ incluem a eliminação da complexidade de gerenciamento de infraestrutura de brokers, a garantia de segurança e confiabilidade na entrega de mensagens e a compatibilidade com ferramentas e aplicativos existentes que utilizam os protocolos suportados. Com o Amazon MQ, os desenvolvedores podem se concentrar na construção de aplicativos sem se preocupar com a infraestrutura de mensageria subjacente.
+
+### Amazon EMR (Elastic MapReduce)
+
+O Amazon EMR (Elastic MapReduce) é um serviço de big data da AWS que permite processar e analisar grandes volumes de dados de forma rápida e eficiente. Ele oferece um ambiente seguro e escalável para executar frameworks populares, como Apache Hadoop, Apache Spark e Apache Hive, além de outras ferramentas de processamento de dados. Os benefícios do Amazon EMR incluem a facilidade de configurar e gerenciar clusters de processamento de dados, a escalabilidade para lidar com grandes cargas de trabalho, a capacidade de processar dados em tempo real e a integração com outros serviços da AWS para armazenamento, análise e visualização de dados. Com o Amazon EMR, as empresas podem realizar análises avançadas e extrair insights valiosos de seus dados de maneira econômica e eficaz.
+
+### Amazon CloudFront
+
+O serviço Amazon CloudFront aproveita a infraestrutura de redes de borda distribuídas globalmente, posicionando-se em proximidade estratégica dos usuários finais. Essa arquitetura permite não apenas uma resposta mais rápida, mas também a capacidade de armazenar em cache conteúdos frequentemente acessados. Ao fazer isso, a entrega de dados solicitados torna-se mais eficiente, reduzindo a latência e proporcionando uma experiência mais ágil e otimizada para os usuários.
 
 ---
 ---
