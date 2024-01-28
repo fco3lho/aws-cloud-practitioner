@@ -921,9 +921,9 @@ AWS Macie é um serviço de segurança e privacidade de dados totalmente gerenci
 
 AWS GuardDuty é um serviço de detecção de ameaças que monitora continuamente atividades mal-intencionadas e comportamentos não autorizados para proteger suas contas, cargas de trabalho e dados da AWS armazenados no Amazon S3.
 
-### AWS Cloud Formation
+### AWS Detective
 
-O AWS CloudFormation permite modelar, provisionar e gerenciar recursos da AWS e de terceiros ao tratar a infraestrutura como código. Como código, a infraestrutura pode ser alterada, versionada e automatizada para atender diversos requisitos de uma implementação de infraestrutura, como o apresentado na questão. Template (modelo) é o nome dado ao arquivo onde são declarados todos os serviços necessários na infraestrutura desejada.
+O Amazon Detective facilita a análise, a investigação e a identificação rápidas da causa raiz de potenciais problemas de segurança ou atividades suspeitas. O Amazon Detective coleta automaticamente dados de log de seus recursos da AWS e usa machine learning, análise estatística e teoria dos gráficos para criar um conjunto de dados vinculados que permite realizar facilmente investigações de segurança mais rápidas e eficientes. Pode analisar trilhões de eventos de várias fontes de dados, como Virtual Private Cloud (VPC) Flow Logs, AWS CloudTrail e Amazon GuardDuty, e criar automaticamente uma visualização interativa e unificada de seus recursos, usuários e interações entre eles ao longo do tempo. O foco do serviço é identificar a causa raiz.
 
 ### Amazon MQ
 
@@ -936,6 +936,10 @@ O Amazon EMR (Elastic MapReduce) é um serviço de big data da AWS que permite p
 ### Amazon CloudFront
 
 O serviço Amazon CloudFront aproveita a infraestrutura de redes de borda distribuídas globalmente, posicionando-se em proximidade estratégica dos usuários finais. Essa arquitetura permite não apenas uma resposta mais rápida, mas também a capacidade de armazenar em cache conteúdos frequentemente acessados. Ao fazer isso, a entrega de dados solicitados torna-se mais eficiente, reduzindo a latência e proporcionando uma experiência mais ágil e otimizada para os usuários.
+
+### AWS Cloud Formation
+
+O AWS CloudFormation permite modelar, provisionar e gerenciar recursos da AWS e de terceiros ao tratar a infraestrutura como código. Como código, a infraestrutura pode ser alterada, versionada e automatizada para atender diversos requisitos de uma implementação de infraestrutura, como o apresentado na questão. Template (modelo) é o nome dado ao arquivo onde são declarados todos os serviços necessários na infraestrutura desejada.
 
 ### Amazon AppFlow
 
@@ -960,6 +964,30 @@ O AWS Config é um serviço da AWS que fornece monitoramento e gerenciamento con
 ### AWS Elastic Beanstalk
 
 O Elastic Beanstalk implanta aplicações da Web para que você possa se concentrar em seus negócios. É um serviço para implementar e escalar aplicações e serviços da Web enquanto você só precisa se preocupar com o desenvolvimento do seu código. Esse serviço gerencia automaticamente a implantação, desde o provisionamento de capacidade, balanceamento de carga e escalabilidade automática até o monitoramento da integridade de aplicações.
+
+### AWS Inspector
+
+O Amazon Inspector detecta automaticamente as workloads, como instâncias do Amazon EC2, contêineres e funções do Lambda, e as verifica em busca de vulnerabilidades de software e exposição não intencional da rede.
+
+### AWS CodeCommit
+
+O AWS CodeCommit é um serviço de controle de origem gerenciado seguro e altamente dimensionável que hospeda repositórios privados do Git. Ele torna mais fácil para as equipes colaborarem com segurança no código com contribuições criptografadas em trânsito e em repouso.
+
+### AWS CodeBuild
+
+O CodeBuild é para compilar e testar.
+
+### AWS CodeDeploy
+
+O CodeDeploy para realizar as implantações.
+
+### AWS Code Artifact
+
+O AWS CodeArtifact é um serviço de gerenciamento e armazenamento de pacotes de software que facilita o compartilhamento, controle de versões e segurança de artefatos de desenvolvimento, como bibliotecas de código e dependências. Ele oferece um repositório centralizado e seguro para armazenar e compartilhar pacotes, integrando-se a ferramentas populares de desenvolvimento e permitindo que equipes colaborem eficientemente. O CodeArtifact ajuda a reduzir a complexidade na gestão de pacotes, melhorando a escalabilidade e a confiabilidade no ciclo de desenvolvimento de software na AWS.
+
+### AWS CodePipeline
+
+O AWS CodePipeline é um serviço gerenciado de entrega continua que ajuda a automatizar pipelines de liberação para oferecer atualizações rápidas e confiáveis de aplicativos e infraestruturas. O CodePipeline automatiza as fases de compilação, teste e implantação do processo de liberação sempre que ocorre uma mudança no código, de acordo com o modelo de liberação que você definiu.
 
 ---
 ---
