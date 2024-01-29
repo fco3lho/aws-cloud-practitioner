@@ -86,6 +86,7 @@
     - [Amazon Kendra](#amazon-kendra)
     - [Amazon Textract](#amazon-texract)
     - [Amazon SageMaker](#amazon-sagemaker)
+- [Amazon CAF (Cloud Adoption Framework)](#amazon-caf-cloud-adoption-framework)
 - [Os 6 pilares do AWS Well-Architected Framework](#os-6-pilares-do-aws-well-architected-framework)
 - [Outros serviços](#outros-serviços)
     - [Amazon Cognito](#amazon-cognito)
@@ -122,6 +123,7 @@
     - [Amazon Connect](#amazon-connect)
     - [AWS Direct Connect](#aws-direct-connect)
     - [AWS Artifact](#aws-artifact)
+    - [Secrets Manager](#secres-manager)
 
 - [Referência de estudos](#referência-de-estudos)
 
@@ -861,6 +863,22 @@ Amazon SageMaker é um serviço de Machine Learning totalmente gerenciado. Com o
 ---
 ---
 
+# Amazon CAF (Cloud Adoption Framework)
+
+O AWS CAF (AWS Cloud Adoption Framework) é um conjunto de práticas recomendadas desenvolvido pela Amazon Web Services (AWS) para ajudar organizações a criar uma abordagem eficaz e abrangente para a adoção da nuvem. Ele oferece orientações estratégicas, práticas e conceitos fundamentais para ajudar as empresas a planejar, implementar e gerenciar suas operações na nuvem de maneira eficiente.
+
+O AWS CAF fornece um conjunto de perspectivas ou "lentes", cada uma delas abordando áreas específicas de preocupação, como governança, pessoas, processos e tecnologia. Isso ajuda as organizações a estruturar e organizar suas iniciativas de adoção da nuvem de acordo com as melhores práticas. As principais lentes do AWS CAF incluem:
+
+- Négocios
+- Pessoas
+- Governança
+- Plataforma
+- Segurança
+- Operações
+
+---
+---
+
 # Os 6 pilares do AWS Well-Architected Framework
 
 Criar um sistema de software é muito parecido com a construção de um edifício. Se a fundação não for sólida, problemas estruturais podem prejudicar a integridade e a função do edifício.
@@ -1022,6 +1040,10 @@ O AWS Direct Connect faz uso da própria infraestrutura global da AWS para melho
 ### AWS Artifact
 
 O Artifact fornece downloads sob demanda de documentos de segurança e conformidade, como certificações ISO da AWS, Payment Card Industry (PCI) e relatórios SOC (Service Organization Control). Você pode enviar os documentos de segurança e conformidade (também conhecidos como artefatos de auditoria) para seus auditores ou reguladores a fim de demonstrar a segurança e a conformidade da infraestrutura da AWS e dos serviços usados por você. Você também pode usar esses documentos como diretrizes para avaliar sua própria arquitetura de nuvem e avaliar os controles internos de sua empresa.
+
+### Secrets Manager
+
+O Secrets Manager tem a função de gerenciar, recuperar e alternar credenciais de acesso a banco de dados, chaves de API e outros segredos ao longo de seus ciclos de vida. Com esse serviço é possível programar a alteração das credenciais sem interromper o uso dos serviços.
 
 ---
 ---
