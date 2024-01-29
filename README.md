@@ -118,6 +118,10 @@
     - [AWS CodeDeploy](#aws-codedeploy)
     - [AWS Code Artifact](#aws-code-artifact)
     - [AWS CodePipeline](#aws-codepipeline)
+    - [AWS CodeStar](#aws-codestar)
+    - [Amazon Connect](#amazon-connect)
+    - [AWS Direct Connect](#aws-direct-connect)
+    - [AWS Artifact](#aws-artifact)
 
 - [Referência de estudos](#referência-de-estudos)
 
@@ -1002,6 +1006,22 @@ O AWS CodeArtifact é um serviço de gerenciamento e armazenamento de pacotes de
 ### AWS CodePipeline
 
 O AWS CodePipeline é um serviço gerenciado de entrega continua que ajuda a automatizar pipelines de liberação para oferecer atualizações rápidas e confiáveis de aplicativos e infraestruturas. O CodePipeline automatiza as fases de compilação, teste e implantação do processo de liberação sempre que ocorre uma mudança no código, de acordo com o modelo de liberação que você definiu.
+
+### AWS Codestar
+
+O AWS CodeStar permite a integração de várias ferramentas de desenvolvimento, desde IDEs, esteiras de CI/CD e gerenciamento de projetos para auxiliar e acelerar a entrega de software. Disponibiliza vários modelos em diversas linguagens de programação para acelerar o desenvolvimento de aplicativos.
+
+### Amazon Connect
+
+Com o Amazon Connect, você pode configurar uma central de contato em questão de minutos, e ela pode ser dimensionada para oferecer suporte a milhões de clientes. Crie experiências de voz omnicanal e chat interativo de alta qualidade para oferecer suporte aos seus clientes de qualquer lugar.
+
+### AWS Direct Connect
+
+O AWS Direct Connect faz uso da própria infraestrutura global da AWS para melhorar esse tipo de conexão. O serviço de nuvem é o caminho mais curto para seus recursos na AWS. Seu tráfego de rede permanece todo o tempo na rede global da AWS e nunca entra na Internet pública. Isso reduz as probabilidades de gargalos ou aumentos inesperados de latência.
+
+### AWS Artifact
+
+O Artifact fornece downloads sob demanda de documentos de segurança e conformidade, como certificações ISO da AWS, Payment Card Industry (PCI) e relatórios SOC (Service Organization Control). Você pode enviar os documentos de segurança e conformidade (também conhecidos como artefatos de auditoria) para seus auditores ou reguladores a fim de demonstrar a segurança e a conformidade da infraestrutura da AWS e dos serviços usados por você. Você também pode usar esses documentos como diretrizes para avaliar sua própria arquitetura de nuvem e avaliar os controles internos de sua empresa.
 
 ---
 ---
