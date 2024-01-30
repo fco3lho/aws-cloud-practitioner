@@ -54,6 +54,8 @@
     - [AWS Private Link](#aws-private-link)
     - [AWS Direct Connect](#aws-direct-connect)
     - [AWS Transit Gateway](#aws-transit-gateway)
+    - [Cliente VPN](#client-vpn)
+    - [Site-to-site VPN](#site-to-site-vpn)
 - [Route 53 - DNS da AWS](#route-53---dns-da-aws)
     - [Políticas Route 53](#políticas-route-53)
 - [Containers](#containers)
@@ -123,7 +125,10 @@
     - [Amazon Connect](#amazon-connect)
     - [AWS Direct Connect](#aws-direct-connect)
     - [AWS Artifact](#aws-artifact)
-    - [Secrets Manager](#secres-manager)
+    - [Secrets Manager](#secrets-manager)
+    - [Managed Services](#managed-services)
+    - [Systems Manager](#systems-manager)
+    - [Parameter Store](#parameter-store)
 
 - [Referência de estudos](#referência-de-estudos)
 
@@ -616,6 +621,14 @@ O AWS Direct Connect é um serviço na Amazon Web Services (AWS) que oferece uma
 
 O AWS Transit Gateway é um serviço da Amazon Web Services (AWS) que simplifica a conectividade de rede em ambientes de nuvem complexos e distribuídos. Ele atua como um ponto centralizado para roteamento de tráfego entre VPCs (Virtual Private Clouds), VPNs (Virtual Private Networks) e redes locais. O Transit Gateway facilita a construção e a gestão de arquiteturas de rede escaláveis, permitindo a comunicação eficiente entre diversos recursos e locais, diferentemente do AWS Peering que conecta VPC por VPC.
 
+### Client VPN
+
+O "Cliente VPN da AWS" refere-se ao serviço Amazon Virtual Private Network (VPN) Client, que é parte do conjunto de serviços oferecidos pela Amazon Web Services (AWS) para facilitar a conexão segura entre redes corporativas e a infraestrutura na nuvem da AWS. Especificamente, o Cliente VPN AWS é uma aplicação de software que permite que dispositivos cliente, como laptops, se conectem de maneira segura a uma Virtual Private Cloud (VPC) da AWS.
+
+### Site-to-site VPN
+
+O "Site-to-Site" (S2S) na AWS refere-se à configuração de uma conexão VPN (Virtual Private Network) entre a infraestrutura de uma empresa (on-premises) e uma Virtual Private Cloud (VPC) na Amazon Web Services (AWS). Essa configuração permite a comunicação segura entre a rede local de uma organização e a VPC na AWS, estabelecendo um túnel criptografado por meio da Internet.
+
 ---
 ---
 
@@ -1044,6 +1057,32 @@ O Artifact fornece downloads sob demanda de documentos de segurança e conformid
 ### Secrets Manager
 
 O Secrets Manager tem a função de gerenciar, recuperar e alternar credenciais de acesso a banco de dados, chaves de API e outros segredos ao longo de seus ciclos de vida. Com esse serviço é possível programar a alteração das credenciais sem interromper o uso dos serviços.
+
+### AWS CloudHSM
+
+O AWS CloudHSM (Hardware Security Module) é um serviço que oferece módulos de segurança de hardware dedicados para ajudar a proteger informações confidenciais, como chaves de criptografia, na nuvem da Amazon Web Services (AWS). O CloudHSM fornece um ambiente seguro e altamente disponível para a geração e o armazenamento de chaves criptográficas, ajudando a atender a requisitos rigorosos de segurança e conformidade.
+
+### AWS Parameter Store
+
+O Parameter Store é um recurso do AWS Systems Manager que oferece armazenamento hierárquico seguro para gerenciamento de dados de configuração e gerenciamento de segredos como configurações e senhas de bancos de dados. Caso haja necessidade de atualizar automaticamente os segredos, pode ser integrado ao Secrets Manager.
+
+### Secrets Manager
+
+O AWS Secrets Manager é um serviço gerenciado da Amazon Web Services (AWS) projetado para ajudar a proteger e gerenciar informações confidenciais, como senhas, chaves de API e outros segredos. Ele oferece uma solução centralizada e segura para armazenar, recuperar e rotacionar esses segredos, simplificando o gerenciamento de informações sensíveis em ambientes de nuvem.
+
+### Managed Services
+
+O Managed Services é o serviço que fornece recursos proativos, preventivos e de detecção que elevam o nível operacional e ajudam a reduzir riscos sem restringir a agilidade, permitindo que você se concentre na inovação e reduza o custo operacional da sua empresa. Contempla segurança, gerenciamento de incidentes, automação, redução de custos e acesso a especialistas da AWS.
+
+### Systems Manager
+
+O Systems Manager é um hub de gerenciamento para recursos na AWS e em ambientes de várias nuvens e híbridos. É dividido em gerenciamento de operações, aplicações, alterações e de nós.
+
+Com este serviço é possível automatizar a atualização dos softwares e configurações de todo seu ambiente e de manter a conformidade das instâncias.
+
+### Parameter Store
+
+O Parameter Store é um serviço da Amazon Web Services (AWS) que fornece um local seguro e hierárquico para armazenar, gerenciar e recuperar configurações e informações sensíveis, como cadeias de caracteres, senhas, tokens, configurações de aplicativos e outros dados de configuração. Ele é uma solução amplamente utilizada para centralizar e gerenciar parâmetros ou configurações em ambientes na nuvem da AWS.
 
 ---
 ---
