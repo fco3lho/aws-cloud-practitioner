@@ -125,10 +125,11 @@
     - [Amazon Connect](#amazon-connect)
     - [AWS Direct Connect](#aws-direct-connect)
     - [AWS Artifact](#aws-artifact)
+    - [AWS CloudHSM](#aws-cloudhsm)
     - [Secrets Manager](#secrets-manager)
+    - [Parameter Store](#parameter-store)
     - [Managed Services](#managed-services)
     - [Systems Manager](#systems-manager)
-    - [Parameter Store](#parameter-store)
 
 - [Referência de estudos](#referência-de-estudos)
 
@@ -1054,21 +1055,17 @@ O AWS Direct Connect faz uso da própria infraestrutura global da AWS para melho
 
 O Artifact fornece downloads sob demanda de documentos de segurança e conformidade, como certificações ISO da AWS, Payment Card Industry (PCI) e relatórios SOC (Service Organization Control). Você pode enviar os documentos de segurança e conformidade (também conhecidos como artefatos de auditoria) para seus auditores ou reguladores a fim de demonstrar a segurança e a conformidade da infraestrutura da AWS e dos serviços usados por você. Você também pode usar esses documentos como diretrizes para avaliar sua própria arquitetura de nuvem e avaliar os controles internos de sua empresa.
 
-### Secrets Manager
-
-O Secrets Manager tem a função de gerenciar, recuperar e alternar credenciais de acesso a banco de dados, chaves de API e outros segredos ao longo de seus ciclos de vida. Com esse serviço é possível programar a alteração das credenciais sem interromper o uso dos serviços.
-
 ### AWS CloudHSM
 
 O AWS CloudHSM (Hardware Security Module) é um serviço que oferece módulos de segurança de hardware dedicados para ajudar a proteger informações confidenciais, como chaves de criptografia, na nuvem da Amazon Web Services (AWS). O CloudHSM fornece um ambiente seguro e altamente disponível para a geração e o armazenamento de chaves criptográficas, ajudando a atender a requisitos rigorosos de segurança e conformidade.
 
-### AWS Parameter Store
-
-O Parameter Store é um recurso do AWS Systems Manager que oferece armazenamento hierárquico seguro para gerenciamento de dados de configuração e gerenciamento de segredos como configurações e senhas de bancos de dados. Caso haja necessidade de atualizar automaticamente os segredos, pode ser integrado ao Secrets Manager.
-
 ### Secrets Manager
 
-O AWS Secrets Manager é um serviço gerenciado da Amazon Web Services (AWS) projetado para ajudar a proteger e gerenciar informações confidenciais, como senhas, chaves de API e outros segredos. Ele oferece uma solução centralizada e segura para armazenar, recuperar e rotacionar esses segredos, simplificando o gerenciamento de informações sensíveis em ambientes de nuvem.
+O Secrets Manager tem a função de gerenciar, recuperar e alternar credenciais de acesso a banco de dados, chaves de API e outros segredos ao longo de seus ciclos de vida. Com esse serviço é possível programar a alteração das credenciais sem interromper o uso dos serviços.
+
+### Parameter Store
+
+O Parameter Store é um recurso do AWS Systems Manager que oferece armazenamento hierárquico seguro para gerenciamento de dados de configuração e gerenciamento de segredos como configurações e senhas de bancos de dados. Caso haja necessidade de atualizar automaticamente os segredos, pode ser integrado ao Secrets Manager.
 
 ### Managed Services
 
@@ -1079,10 +1076,6 @@ O Managed Services é o serviço que fornece recursos proativos, preventivos e d
 O Systems Manager é um hub de gerenciamento para recursos na AWS e em ambientes de várias nuvens e híbridos. É dividido em gerenciamento de operações, aplicações, alterações e de nós.
 
 Com este serviço é possível automatizar a atualização dos softwares e configurações de todo seu ambiente e de manter a conformidade das instâncias.
-
-### Parameter Store
-
-O Parameter Store é um serviço da Amazon Web Services (AWS) que fornece um local seguro e hierárquico para armazenar, gerenciar e recuperar configurações e informações sensíveis, como cadeias de caracteres, senhas, tokens, configurações de aplicativos e outros dados de configuração. Ele é uma solução amplamente utilizada para centralizar e gerenciar parâmetros ou configurações em ambientes na nuvem da AWS.
 
 ---
 ---
